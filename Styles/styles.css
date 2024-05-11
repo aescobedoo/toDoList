@@ -1,0 +1,165 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #0d2850;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.header {
+  text-align: center;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.header h1 {
+  margin: 2rem 0;
+  font-size: 4rem;
+  text-shadow: 0 0.25rem #93b3dd;
+  -webkit-text-stroke: 0.1rem #93b3dd;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: #93b3dd;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.input h3, .input p, .input form {
+  margin: 0.25rem 0;
+}
+.input h3 {
+  font-size: 2rem;
+}
+
+form {
+  width: 60%;
+}
+form > * {
+  margin: 0.5rem 0;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#taskDes {
+  width: 70%;
+  height: 1.25rem;
+  resize: vertical; /* Allow vertical resizing */
+  white-space: pre-wrap; /* Wrap text onto the next line */
+}
+
+#submit {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  color: #0d2850;
+  background-color: #ffffff;
+  padding: 0.25rem;
+  border: 0.1rem solid #0d2850;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px;
+  transition: transform 0.1s;
+}
+#submit:hover {
+  box-shadow: 0 2px;
+  transform: translateY(0.1rem);
+}
+#submit:active {
+  background-color: #ffa82f;
+  color: #0d2850;
+  box-shadow: 0 -1px;
+  transform: translateY(0.15rem);
+}
+
+.yourTasks {
+  background-color: #ffffff;
+  margin-top: 5vh;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+.yourTasks h2 {
+  color: #0d2850;
+  margin: 0.5rem 0;
+}
+.yourTasks #taskList {
+  width: 90%;
+  list-style: none;
+}
+.yourTasks #taskList > * {
+  border-bottom: 2px solid #4677B2;
+  color: #0d2850;
+  display: flex;
+  padding: 0.5rem 0;
+}
+.yourTasks #taskList > * .leftColumn {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yourTasks #taskList > * .leftColumn .doneButton {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #0d2850;
+  cursor: pointer;
+}
+.yourTasks #taskList > * .leftColumn .doneButton::after {
+  content: "✓";
+  font-size: 1.25rem;
+  color: #ffffff;
+  position: relative;
+  display: none;
+  margin: auto;
+  left: 0.1rem;
+  top: -0.2rem;
+}
+.yourTasks #taskList > * .leftColumn .doneButton:hover {
+  background-color: #0d2850;
+}
+.yourTasks #taskList > * .leftColumn .doneButton:hover::after {
+  display: block;
+}
+.yourTasks #taskList > * .taskInfo {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+.yourTasks #taskList > * .taskInfo > * {
+  padding: 0.1rem;
+}
+.yourTasks #taskList > * .taskInfo .dueDate {
+  color: #93b3dd;
+  font-weight: 100;
+}
+.yourTasks #taskList > * .taskInfo .urgent {
+  color: #ffa82f;
+}

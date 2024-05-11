@@ -1,0 +1,13 @@
+// Display: flex mixins
+@mixin flexVer($align: center,$wi: 100%){
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  width: $wi;
+}
+
+@mixin flexHor($justify: space-between){
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
