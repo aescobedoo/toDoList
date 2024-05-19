@@ -121,11 +121,11 @@ form {
           border: .1rem solid $deepBlue;
           cursor: pointer;
           &::after{
+            display: none;
             content: '✓';
             font-size: 1.25rem;
             color: $white;
             position: relative;
-            display: none;
             margin: auto;
             left: .1rem;
             top: -.2rem;

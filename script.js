@@ -4,8 +4,6 @@ let taskList = document.getElementById('taskList');
 let doneButtons = document.getElementsByClassName('doneButton');
 let dueDateElement = document.querySelector('.dueDate');
 
-//funcitons
-
 // Function for adding tasks
 const addTask = (event) => {
   event.preventDefault();

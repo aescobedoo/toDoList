@@ -14,7 +14,7 @@
 
     <p>
       This is a website where you can create your own to-do list. 
-      You can add your tasks down below and add them wheather they are a
+      You can add your tasks down below and add them whether they are a
       priority or not so much.
     </p>
   </div>
@@ -23,7 +23,7 @@
   <div class="input">
     <h3>Task creator</h3>
     <p>Here you are meant to create your new task of the to-do list.</p>
-    <form action="" method="">
+    <form action="" method="GET">
 
       <div class="question">
         <label for="taskTitle">Title</label>
@@ -41,11 +41,11 @@
       </div>
 
       <div class="question">
-        <span>Your task is?</span>
-        <input type="radio" id="urgent" name="fav_language" value="true">
-        <label for="urgent">Urgent</label><br>
-        <input type="radio" id="notUrgent" name="fav_language" value="false" checked>
-        <label for="notUrgent">Not so much</label><br>
+        <span>Urgent?</span>
+        <input type="radio" id="urgent" name="urgency" value="true">
+        <label for="urgent">YES!</label><br>
+        <input type="radio" id="notUrgent" name="urgency" value="false" checked>
+        <label for="notUrgent">No</label><br>
       </div>
 
       <button type="submit" id="submit">Submit task</button>
@@ -61,6 +61,6 @@
     </ul>
   </div>
 
-  <script src="script.js"></script>
+  <script src="scriptV2.js"></script>
 </body>
 </html>

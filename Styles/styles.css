@@ -131,11 +131,11 @@ form > * {
   cursor: pointer;
 }
 .yourTasks #taskList > * .leftColumn .doneButton::after {
+  display: none;
   content: "✓";
   font-size: 1.25rem;
   color: #ffffff;
   position: relative;
-  display: none;
   margin: auto;
   left: 0.1rem;
   top: -0.2rem;
